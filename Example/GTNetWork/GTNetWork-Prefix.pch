@@ -17,7 +17,7 @@
 #import <GTSpec/PersistenceHelper.h>
 #import <GTSpec/ValueForKey.h>
 #import <GTSpec/NSDictionary+JSONString.h>
-#import "GTNetWorkConstants.h"
+#import "GTNetConstants.h"
 #import "GTConfigManage.h"
 
-#endif
+#endifg

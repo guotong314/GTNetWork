@@ -10,7 +10,7 @@
 		4E6CCA941E24C91B003AB4A3 /* GTConfigManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCA931E24C91B003AB4A3 /* GTConfigManage.m */; };
 		4E6CCA971E24D269003AB4A3 /* GTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCA961E24D269003AB4A3 /* GTHttpClient.m */; };
 		4E6CCA9A1E24D73E003AB4A3 /* GTHttpClient+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCA991E24D73E003AB4A3 /* GTHttpClient+Internal.m */; };
-		4E6CCA9D1E24D905003AB4A3 /* GTNetWorkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCA9C1E24D905003AB4A3 /* GTNetWorkConstants.m */; };
+		4E6CCAA01E25D3BC003AB4A3 /* GTNetConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CCA9F1E25D3BC003AB4A3 /* GTNetConstants.m */; };
 		502E18F9C94E6DD397E47D4E /* libPods-GTNetWork_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C5D1F1962370DF2EB1809 /* libPods-GTNetWork_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -48,8 +48,8 @@
 		4E6CCA961E24D269003AB4A3 /* GTHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTHttpClient.m; sourceTree = "<group>"; };
 		4E6CCA981E24D73E003AB4A3 /* GTHttpClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTHttpClient+Internal.h"; sourceTree = "<group>"; };
 		4E6CCA991E24D73E003AB4A3 /* GTHttpClient+Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTHttpClient+Internal.m"; sourceTree = "<group>"; };
-		4E6CCA9B1E24D905003AB4A3 /* GTNetWorkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetWorkConstants.h; sourceTree = "<group>"; };
-		4E6CCA9C1E24D905003AB4A3 /* GTNetWorkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNetWorkConstants.m; sourceTree = "<group>"; };
+		4E6CCA9E1E25D3BC003AB4A3 /* GTNetConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetConstants.h; sourceTree = "<group>"; };
+		4E6CCA9F1E25D3BC003AB4A3 /* GTNetConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNetConstants.m; sourceTree = "<group>"; };
 		554ADC3A640578BBE66BCB15 /* Pods-GTNetWork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTNetWork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTNetWork_Tests/Pods-GTNetWork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GTNetWork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTNetWork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -186,8 +186,8 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* GTNetWork-Prefix.pch */,
-				4E6CCA9B1E24D905003AB4A3 /* GTNetWorkConstants.h */,
-				4E6CCA9C1E24D905003AB4A3 /* GTNetWorkConstants.m */,
+				4E6CCA9E1E25D3BC003AB4A3 /* GTNetConstants.h */,
+				4E6CCA9F1E25D3BC003AB4A3 /* GTNetConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -420,11 +420,11 @@
 			files = (
 				4E6CCA9A1E24D73E003AB4A3 /* GTHttpClient+Internal.m in Sources */,
 				6003F59E195388D20070C39A /* GTAppDelegate.m in Sources */,
+				4E6CCAA01E25D3BC003AB4A3 /* GTNetConstants.m in Sources */,
 				4E6CCA941E24C91B003AB4A3 /* GTConfigManage.m in Sources */,
 				6003F5A7195388D20070C39A /* GTViewController.m in Sources */,
 				4E6CCA971E24D269003AB4A3 /* GTHttpClient.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				4E6CCA9D1E24D905003AB4A3 /* GTNetWorkConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
