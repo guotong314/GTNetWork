@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/GTNetWork'
+  s.homepage         = 'https://github.com/guotong314/GTNetWork'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '郭通' => 'guotong314@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/GTNetWork.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/guotong314/GTNetWork.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
-  s.source_files = 'GTNetWork/Classes/**/*'
+  s.prefix_header_file =  'Example/GTNetWork/GTNetWork-Prefix.pch'
+  s.source_files = 'Example/GTNetWork/Classes/**/*'
   
   # s.resource_bundles = {
   #   'GTNetWork' => ['GTNetWork/Assets/*.png']
@@ -38,5 +39,8 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ASIHTTPRequest', '~> 1.8.2'
+  s.dependency 'GTSpec'
+  s.dependency 'GTUser'
 end
