@@ -7,6 +7,7 @@
 //
 
 #import "GTHttpClient+Internal.h"
+#import <GTBaseRule.h>
 
 @implementation GTHttpClient(Internal)
 
@@ -113,6 +114,7 @@ withCompletionHandler:(DMCompletionHandler)handler
         reason = @"用户名错误,请重试";
     }else if([aErrorMsg isEqualToString:@"SESSION_INVALID"]){
         reason = @"token失效，请重新登录";
+        [GTBaseRule openURL:@"dm://tokenInValid"];
 //        [APPDELEGATE postShowLogin];
         //        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationShowLogin object:nil];
     }
