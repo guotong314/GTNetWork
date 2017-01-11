@@ -1,0 +1,18 @@
+source "https://github.com/guotong314/podSpec.git"
+source "https://github.com/CocoaPods/Specs.git"
+platform :ios, '7.0'
+
+target 'GTNetWork_Example' do
+#  pod 'GTNetWork', :path => '../'
+
+  pod 'GTSpec'
+  pod 'GTUser'
+  pod 'AFNetworking', '~> 2.0'
+  pod 'ASIHTTPRequest', '~> 1.8.2'
+
+  target 'GTNetWork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
