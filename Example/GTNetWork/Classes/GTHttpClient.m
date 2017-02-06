@@ -47,7 +47,7 @@
         self.manager.responseSerializer.acceptableContentTypes = jsonAcceptableContentTypes;
         
         BOOL atsEnable = [[ConfigManage getSystemConfig:@"atsEnable"] boolValue];
-        if (atsEnable) {
+        if (!atsEnable) {
             AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
             // 如果是需要服务端验证证书，需要设置为YES
             securityPolicy.allowInvalidCertificates = YES;
